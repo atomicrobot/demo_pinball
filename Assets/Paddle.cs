@@ -59,10 +59,6 @@ public class Paddle : MonoBehaviour {
                 transform.localRotation = Quaternion.Euler(new Vector3(transform.localRotation.x, defaultPos, transform.localRotation.z));
             }
         }
-
-        if (ccw == -1)
-        {
-            Debug.Log(transform.localRotation.eulerAngles.y);
-        }
+        
     }
 }

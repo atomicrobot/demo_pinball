@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSide: 0
-  RotationSpeed: 100
+  RotationSpeed: 300
   range: 60
   defaultPos: 40
 --- !u!4 &316691549 stripped
@@ -350,11 +350,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
@@ -516,15 +520,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0000001
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1326145bfd2c3374db5e20bb02902912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -642,6 +646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSide: 1
-  RotationSpeed: 100
+  RotationSpeed: 300
   range: 60
   defaultPos: 140
