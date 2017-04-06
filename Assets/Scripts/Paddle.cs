@@ -9,6 +9,9 @@ public class Paddle : MonoBehaviour {
         left, right
     }
 
+    public GameObject steamController;
+
+
     public Side paddleSide = Side.left;
     public int RotationSpeed = 100;
     public float range = 50.0f;
@@ -31,10 +34,13 @@ public class Paddle : MonoBehaviour {
 
     public bool isKeyDown()
     {
-        bool keyIsDown = Input.GetKey(paddleSide == Side.left ? KeyCode.LeftShift : KeyCode.RightShift);
-        if (Input.GetMouseButton(0))
-            keyIsDown = true;
-        return keyIsDown;
+        //bool keyIsDown = Input.GetKey(paddleSide == Side.left ? KeyCode.LeftShift : KeyCode.RightShift);
+        //if (Input.GetMouseButton(0))
+        //    keyIsDown = true;
+
+        SteamVR_TrackedObject trackedObj = steamController.GetComponent<SteamVR_TrackedObject>();
+        
+        return SteamVR_Controller.Input((int)trackedObj.index).GetHairTrigger();
     }
 
     public bool hasNotReachedRotaionBounds()
