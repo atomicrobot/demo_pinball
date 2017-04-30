@@ -5,6 +5,7 @@ using UnityEngine;
 public class PaddleCollision : MonoBehaviour {
 
     public Paddle paddleGameObject;
+    public AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,9 @@ public class PaddleCollision : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        //if (paddleGameObject.isKeyDown() && paddleGameObject.hasNotReachedRotaionBounds())
-        //    col.transform.GetComponent<Rigidbody>().AddForce(transform.up * 10);
+        if (paddleGameObject.isKeyDown() && paddleGameObject.hasNotReachedRotaionBounds())
+            col.transform.GetComponent<Rigidbody>().AddForce(transform.up * 10);
+        audioSource.Play();
+
     }
 }

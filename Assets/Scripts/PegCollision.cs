@@ -6,9 +6,11 @@ public class PegCollision : MonoBehaviour {
 
 
     private Material rendererMaterial;
+    public AudioSource audioSource;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         Physics.defaultContactOffset = 0.1F;
         rendererMaterial = transform.GetComponent<Renderer>().material;
     }
@@ -24,6 +26,8 @@ public class PegCollision : MonoBehaviour {
         col.transform.GetComponent<Rigidbody>().AddForce(directionOfMotion * 10);
 
         StartCoroutine("rainbowColors");
+        audioSource.Play();
+
     }
 
     IEnumerator rainbowColors()
@@ -51,7 +55,6 @@ public class PegCollision : MonoBehaviour {
         }
 
         rendererMaterial.color = new Color(0, 0.5f, 1.0f);
-
     }
-
+    
 }
