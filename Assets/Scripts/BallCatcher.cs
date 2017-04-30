@@ -18,6 +18,6 @@ public class BallCatcher : MonoBehaviour {
     {
         col.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
         col.transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        col.transform.position = new Vector3(-0.15f, 1.0f, -1);
+        col.transform.position = new Vector3(0.0f, 1.0f, -1);
     }
 }

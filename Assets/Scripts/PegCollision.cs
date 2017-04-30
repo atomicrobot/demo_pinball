@@ -36,13 +36,13 @@ public class PegCollision : MonoBehaviour {
             switch (mod)
             {
                 case 0:
-                    nextColor = Color.cyan;
+                    nextColor = new Color(255, 153, 0);
                     break;
                 case 1:
                     nextColor = Color.blue;
                     break;
                 case 2:
-                    nextColor = Color.yellow;
+                    nextColor = Color.green;
                     break;
             }
 

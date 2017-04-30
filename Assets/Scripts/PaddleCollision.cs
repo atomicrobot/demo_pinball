@@ -20,7 +20,7 @@ public class PaddleCollision : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (paddleGameObject.isKeyDown() && paddleGameObject.hasNotReachedRotaionBounds())
-            col.transform.GetComponent<Rigidbody>().AddForce(transform.up * 10);
+        //if (paddleGameObject.isKeyDown() && paddleGameObject.hasNotReachedRotaionBounds())
+        //    col.transform.GetComponent<Rigidbody>().AddForce(transform.up * 10);
     }
 }
