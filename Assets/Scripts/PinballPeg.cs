@@ -31,6 +31,10 @@ public class PinballPeg : MonoBehaviour
     {
         var directionOfMotion = col.transform.GetComponent<Rigidbody>().velocity.normalized;
         directionOfMotion = -directionOfMotion;
+        if (directionOfMotion.magnitude < 0.05f)
+        {
+            directionOfMotion = transform.up.normalized;
+        }
         col.transform.GetComponent<Rigidbody>().AddForce(directionOfMotion * GameSession.PEG_FORCE);
     }
 
