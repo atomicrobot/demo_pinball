@@ -27,10 +27,7 @@ public class BallCatcher : MonoBehaviour {
 
     void resetBall()
     {
-        ball.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        ball.transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        ball.transform.position = new Vector3(0.0f, 1.0f, -1);
-
+        ball.GetComponent<Ball>().resetBall();
         dieAudioSource.Play();
     }
 }
