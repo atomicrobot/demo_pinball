@@ -145,6 +145,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 138723722}
+  - component: {fileID: 138723723}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -166,6 +167,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 180.00002, z: 0}
+--- !u!114 &138723723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 138723721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa62676b38b07fd48ba3ce046d29c2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206125522
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieAudioSource: {fileID: 1796275413}
+  ball: {fileID: 406486681}
 --- !u!1001 &1319724786
 Prefab:
   m_ObjectHideFlags: 0
