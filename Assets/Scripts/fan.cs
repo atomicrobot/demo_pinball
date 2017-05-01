@@ -7,12 +7,12 @@ public class fan : MonoBehaviour {
     public int rotationSpeed;
     public AudioSource audioSource;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake() {
+
 	}
 
-	void Awake() {
+	// Use this for initialization
+	void Start () {
 		
 	}
 
