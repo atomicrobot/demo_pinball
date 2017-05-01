@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BallCatcher : MonoBehaviour {
 
+    public AudioSource dieAudioSource;
+    public GameObject ball;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,13 +14,20 @@ public class BallCatcher : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKeyDown(KeyCode.Space))
+        {
+            resetBall();
+        }
 	}
 
     void OnCollisionEnter(Collision col)
     {
-        col.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        col.transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        col.transform.position = new Vector3(-0.15f, 1.0f, -1);
+        resetBall();
+    }
+
+    void resetBall()
+    {
+        ball.GetComponent<Ball>().resetBall();
+        dieAudioSource.Play();
     }
 }
