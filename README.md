@@ -1,3 +1,3 @@
 # Unity Pinball Demo (for iOS)
 
-<p align="center"><img title="" src="https://github.com/madebyatomicrobot/demo_pinball/raw/master/hero.png"/></p>
+<p align="center"><img title="" src="https://github.com/madebyatomicrobot/demo_pinball/raw/master/hero.png" width="250px"/></p>
