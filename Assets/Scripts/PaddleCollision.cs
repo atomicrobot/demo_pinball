@@ -22,8 +22,9 @@ public class PaddleCollision : MonoBehaviour {
     void OnCollisionEnter(Collision col)
     {
         if (paddleGameObject.isKeyDown() && paddleGameObject.hasNotReachedRotaionBounds())
-            col.transform.GetComponent<Rigidbody>().AddForce(transform.up * 10);
-        audioSource.Play();
-
+        {
+            col.transform.GetComponent<Rigidbody>().AddForce(transform.up * GameSession.PADDLE_FORCE);
+            audioSource.Play();
+        }
     }
 }

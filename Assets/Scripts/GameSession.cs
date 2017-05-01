@@ -11,6 +11,8 @@ public class GameSession {
     }
 
     public static int PEG_SCORE_VALUE = 25;
+    public static int PEG_FORCE = 11;
+    public static int PADDLE_FORCE = 11;
 
     public GameSession()
     {

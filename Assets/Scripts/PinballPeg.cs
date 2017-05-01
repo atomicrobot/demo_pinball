@@ -25,7 +25,7 @@ public class PinballPeg : MonoBehaviour {
     {
         var directionOfMotion = col.transform.GetComponent<Rigidbody>().velocity.normalized;
         directionOfMotion = -directionOfMotion;
-        col.transform.GetComponent<Rigidbody>().AddForce(directionOfMotion * 10);
+        col.transform.GetComponent<Rigidbody>().AddForce(directionOfMotion * GameSession.PEG_FORCE);
 
         StartCoroutine("rainbowColors");
         audioSource.Play();
