@@ -138,6 +138,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.madebyatomicrobot.pinball
     Standalone: com.stuartsoft.pinballdemo
+    iOS: com.madebyatomicrobot.pinball
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 25
